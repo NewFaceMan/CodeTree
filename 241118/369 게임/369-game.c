@@ -8,7 +8,7 @@ int main() {
         if (i == 0) {
             continue;
         }
-        if(i % 3 == 0 || (i / 3) + i == 4 + i) {
+        if(i % 3 == 0 || (i / 3) == 4 + i) {
             printf("0 ");
         } else {
             printf("%d ", i);
