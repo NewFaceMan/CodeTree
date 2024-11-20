@@ -1,6 +1,4 @@
-a, b = map(int, input().split())
-
+a , b = 31, 64
 if (a < b) :
     print(f"{b - a}")
-elif (a > b) :
-    print(f"{a - b}")
+
