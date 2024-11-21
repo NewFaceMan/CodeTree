@@ -8,6 +8,6 @@ else :
     print('B')
     if (a_math == b_math and a_math > b_math) :
         print('A')
-    elif (a_math == b_math and a_math < b_math) :
+    else (a_math == b_math and a_math < b_math) :
         print('B')
 
