@@ -1,8 +1,8 @@
 a, b, c = map(int, input().split())
 
-if a < b and a < c :
+if a <= b and a <= c :
     minimum = a
-elif b < a and b < c :
+elif b <= a and b <= c :
     minimum = b
 else :
     minimum = c
