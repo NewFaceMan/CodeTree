@@ -1,6 +1,6 @@
-leap_year = int(input())
+year = int(input())
 
-if ((leap_year % 4 == 0) or (leap_year % 400 == 0)) :
+if ((year % 4 == 0) or (year % 100 == 0 and year % 400 == 0)) :
     print("true")
 else :
     print("false")
