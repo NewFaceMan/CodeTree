@@ -15,17 +15,38 @@ clinicB = 0
 clinicC = 0
 clinicD = 0
 
-if (a_coldSymptoms == 'Y' or b_coldSymptoms == 'Y' or c_coldSymptoms == 'Y') :
-    if (a_temperature >= 37 or b_temperature >= 37 or c_temperature >= 37) :
-        clinicA += 1
-    else :
-        clinicC += 1
+if a_coldSymptoms == 'Y' : #감기 있을 떄
+    if a_temperature >= 37 : #37도 이상이면
+        clinicA += 1 #A + 1
+    else : #37도 이하면
+        clinicC += 1 #C + 1
+else : #감기 없을 때
+    if a_temperature >= 37 : #37도 이상이면
+        clinicB += 1 #B + 1
+    else : # 37도 이하면
+        clinicD += 1 #D + 1
 
-elif (a_coldSymptoms == 'N' or b_coldSymptoms == 'N' or c_coldSymptoms == 'N') :
-    if (a_temperature >= 37 or b_temperature >= 37 or c_temperature >= 37) :
-        clinicB += 1
-    else :
-        clinicD += 1
+if b_coldSymptoms == 'Y' : #감기 있을 떄
+    if b_temperature >= 37 : #37도 이상이면
+        clinicA += 1 #A + 1
+    else : #37도 이하면
+        clinicC += 1 #C + 1
+else : #감기 없을 때
+    if b_temperature >= 37 : #37도 이상이면
+        clinicB += 1 #B + 1
+    else : # 37도 이하면
+        clinicD += 1 #D + 1
+
+if c_coldSymptoms == 'Y' : #감기 있을 떄
+    if c_temperature >= 37 : #37도 이상이면
+        clinicA += 1 #A + 1
+    else : #37도 이하면
+        clinicC += 1 #C + 1
+else : #감기 없을 때
+    if c_temperature >= 37 : #37도 이상이면
+        clinicB += 1 #B + 1
+    else : # 37도 이하면
+        clinicD += 1 #D + 1
 
 if clinicA >= 2 :
     print('E')
