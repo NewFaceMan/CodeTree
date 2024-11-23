@@ -1,10 +1,8 @@
-count = 0
+n = int(input())
 sum_val = 0
-while count <= 10 :
-    n = int(input())
-    if (n % 2 == 1 and b % 3 == 0) :
-        sum_val += n
-    else :
-        continue;
-    count += 1
+for _ in range(n) :
+    number = int(input())
+    if (n % 2 == 1 and n % 3 == 0) :
+        sum_val += number
 print(sum_val)
+
