@@ -1,3 +1,3 @@
-n = 8
-for i in range(n) :
-    print('G', end = '')
+n = input()
+for i in range(8) :
+    print(n, end = '')
