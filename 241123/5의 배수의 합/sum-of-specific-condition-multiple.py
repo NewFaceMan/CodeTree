@@ -6,7 +6,7 @@ if a > b :
             sum_val += i
 elif b > a :
     for i in range(a, b+1) :
-        if 1 % 5 == 0 :
+        if i % 5 == 0 :
             sum_val += i
 else :
     if (a % 5 == 0) :
