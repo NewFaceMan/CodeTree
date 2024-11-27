@@ -8,7 +8,7 @@ while True :
         sum_age += age
         cnt += 1
     else :
-        avg = sum / cnt
+        avg = sum_age / cnt
         break
     
 print(f"{avg:.2f}")
