@@ -7,7 +7,7 @@ while True :
     if age < 30 :
         sum_age += age
         cnt += 1
-    if age <= 20 || age >= 30 :
+    if age <= 20 or age >= 30 :
         avg = sum_age / cnt
         break
     
