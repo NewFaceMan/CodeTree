@@ -5,7 +5,7 @@ int main() {
     scanf("%d", &num1);
     if (num1 < 0){
         printf("%d\n", num1);
-        printf("minus")
+        printf("minus");
     }
     // Please write your code here.
     return 0;
